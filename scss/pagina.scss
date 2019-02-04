@@ -1,0 +1,325 @@
+
+/*GENERAL*/ html {
+    font-size: 62.5% ; 
+    font-family: 'Krub', sans-serif; 
+    background-image: url(../imagenes/repetido.png);
+
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    div {
+        display: block;
+    }
+
+    body {font-size: 1.5rem ;
+        border-left: 0 ; 
+        color: blanchedalmond;
+
+        img {
+            width: 100%
+        }
+
+        /*control de fuentes*/
+
+        h2{/*titulo de cada seccion*/
+            background-image: linear-gradient(to left, coral , rgba(255, 255, 0, 0.61)); 
+            color: rgb(245, 235, 143);
+            text-align: right; font-size: 5rem; 
+            padding: 10px;
+            font-family: 'Itim', cursive;
+        }
+        h3 { /*nombre de los personajes*/
+            color:coral
+        }
+        h4 {/*letras del formulario*/
+            font-size:2rem; 
+        }
+
+        header {
+            background-color: rgb(0, 0, 0) ;
+            position: fixed;
+            top: 0 ; 
+            width: 100%
+        }
+
+        main {
+            background-color: rgba(70, 60, 80, 0.418);
+
+            .wrapper {
+                margin-top:0;
+                padding-top: 60px;
+                padding-bottom: 0px;
+                width: 100% ;
+            }
+
+            .universe-main { /*PARA CONTROLAR CADA SECCION*/
+                text-align: center
+            }
+        }
+    }
+}
+/*MENU NAVEGADOR*/ nav {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr 1fr 1fr 1.2fr 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 1em;
+    align-items: center;
+    text-align: center;
+      
+    .logo {
+        grid-column: 1;
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Steven_Universe_logo.svg/1200px-Steven_Universe_logo.svg.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 10vh;
+      }
+      
+      .navLinks {
+        font-size: 1.2em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: blanchedalmond
+      }
+      
+      .navLinks:hover {
+        color: chocolate;
+        
+        padding: 1em 1em;
+      }
+}
+/*INICIO*/ #slideshow {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+
+
+    .slide-wrapper {
+        width: 4800px;
+        animation: slide 8s ease infinite;
+   
+
+        .slide {
+            float: left;
+            height: 600px;
+            width: 1050px;
+        }
+
+@-webkit-keyframes slide {
+  20% {margin-left: 200px;}
+  30% {margin-left: -1000px;}
+  50% {margin-left: -1000px;}
+  60% {margin-left: -2000px;}
+  70% {margin-left: -2000px;}
+  80% {margin-left: -3000px;}
+  90% {margin-left: -3000px;}
+    }
+}
+}
+/*HISTORIA*/ .historia-grid {
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 1em;
+    align-items: center;
+    text-align: center;
+    
+    .historia-columna{
+        width: 100%;
+        
+        padding: 0.5rem ;
+
+        img {
+        width: 100%
+        }
+
+        img:hover {
+        transform: scale(1.3)
+        }
+    }
+}
+/*PERSONAJES*/ .personajes-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    ; justify-content: center; 
+
+    .foto-circular-personaje {
+        width: 18rem;
+        height: 18rem;
+        border-radius: 50%;
+        overflow: hidden;
+        border-color:  coral;
+        border-style: solid;
+        border-width: 0.4rem;
+        margin: auto;
+        transition-duration: 0.5s ;
+        transition-timing-function: linear;
+        transition-delay:  0s;
+
+        img {
+            width: 20rem
+        }
+
+    }
+
+        .foto-circular-personaje:hover{
+            transform:scale(1.03);
+            border-width:0.7rem; 
+            border-color: rgb(255, 196, 0)
+        }
+
+        .column-personajes {
+            width: 300px;
+            padding: 7rem 0 2rem 0;
+
+        .linea-negra {
+            border-style: solid;
+            border-bottom: black;
+            border-width: 0.1rem;
+            margin: 1rem 0 1rem 0;
+        }
+        
+    }
+ 
+}
+/*REBECCA*/ .rebecca-grid {
+
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-auto-rows: auto;
+    grid-gap: 1em;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+        
+            img {
+                width: 350px ;
+                border-radius: 50%;
+                padding: 5rem 0rem 2rem 0rem
+        }
+
+        .column-rebecca {
+            width: 100%;
+            padding: 2rem 5rem 0 4rem; 
+            
+            .imagen {
+                padding-right: 0
+            } 
+        }
+}
+/*CONTACTO*/ .formulario {
+    padding-top: 2rem;
+    
+    textarea {
+        width: 75% ; 
+        height: 250px; 
+        border-radius: 0.8rem 
+    }
+    
+   input {
+       width: 75% ;
+       height: 40px;}
+}
+/*FOOTER*/ footer {
+    background-color: rgb(0, 0, 0) ; 
+    font-size:5rem ; 
+    text-align: center ; 
+
+    a { 
+        text-decoration: none ;
+        color: coral;
+    }
+
+    a:hover {
+        color: chocolate
+    }
+}
+
+/*PARA CELULAR*/
+@media screen and (max-width: 900px) {
+
+/*general*/
+
+body {
+    h2 {/*cambiar los titulos de cada seccion*/
+        font-size:1.2rem ;
+        text-align: center
+    }
+}
+
+/*menu*/
+
+header {
+    position: initial;
+    
+    nav {
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+      grid-gap: 1em;
+      border-left:none ;
+      border-right : none 
+    }
+}
+
+/*home*/
+
+#slideshow {display: none}
+     
+ /*historia*/ 
+ #historia{
+
+    .historia-grid {
+        grid-template-columns: 0fr 1fr 0fr;
+     
+        img {
+            visibility: hidden
+        }
+    }
+
+    iframe {
+        height: 200px;
+    }
+}
+
+/*personajes*/
+
+.column-personajes{
+    width: 100%;
+    margin-top: 1rem ;
+    padding: 2rem; 
+}
+
+/*rebecca*/
+.rebecca-grid {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+      
+    img {
+        width: 300px ;
+        padding-top: 1rem
+    }
+}
+
+/*contacto*/
+
+.formulario {
+    padding-left: 4px ;
+    padding-right:4px;
+  
+   textarea {
+       width: 100% ; 
+       height: 100px;
+    }
+   
+   input {
+       width: 75% ; 
+       height: 30px;
+    }   
+}
+
+}
