@@ -242,32 +242,34 @@
 /*PARA CELULAR*/
 @media screen and (max-width: 900px) {
 
-/*general*/
-
-body {
-    h2 {/*cambiar los titulos de cada seccion*/
-        font-size:1.2rem ;
-        text-align: center
-    }
-}
+/*general*/ 
 
 /*menu*/
+html{
+    body {
+        h2 {/*cambiar los titulos de cada seccion*/
+            font-size:3rem ;
+            text-align: center;
+        }   
 
-header {
-    position: initial;
+        header {
+        position: relative;
     
-    nav {
-      grid-template-columns: 100%;
-      grid-template-rows: auto;
-      grid-gap: 1em;
-      border-left:none ;
-      border-right : none 
+            nav {
+                grid-template-columns: 100%;
+                grid-template-rows: auto;
+                grid-gap: 1em;
+                border-left:none ;
+                border-right : none 
+            }
+        }
     }
 }
-
 /*home*/
 
-#slideshow {display: none}
+#slideshow {
+    display: none
+}
      
  /*historia*/ 
  #historia{
@@ -286,13 +288,13 @@ header {
 }
 
 /*personajes*/
-
-.column-personajes{
-    width: 100%;
-    margin-top: 1rem ;
-    padding: 2rem; 
+.personajes-flex {
+    .column-personajes{
+        width: 100%;
+        margin-top: 1rem ;
+        padding: 2rem; 
+    }
 }
-
 /*rebecca*/
 .rebecca-grid {
     grid-template-columns: 100%;

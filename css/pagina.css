@@ -1,1 +1,385 @@
-html{font-size:62.5%;font-family:'Krub', sans-serif;background-image:url(../imagenes/repetido.png)}html *{margin:0;box-sizing:border-box}html div{display:block}html body{font-size:1.5rem;border-left:0;color:blanchedalmond}html body img{width:100%}html body h2{background-image:linear-gradient(to left, coral, rgba(255,255,0,0.61));color:#f5eb8f;text-align:right;font-size:5rem;padding:10px;font-family:'Itim', cursive}html body h3{color:coral}html body h4{font-size:2rem}html body header{background-color:#000;position:fixed;top:0;width:100%}html body main{background-color:rgba(70,60,80,0.418)}html body main .wrapper{margin-top:0;padding-top:60px;padding-bottom:0px;width:100%}html body main .universe-main{text-align:center}nav{display:grid;grid-template-columns:1fr 0.8fr 1fr 1fr 1.2fr 1fr;grid-auto-rows:auto;grid-gap:1em;align-items:center;text-align:center}nav .logo{grid-column:1;background-image:url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Steven_Universe_logo.svg/1200px-Steven_Universe_logo.svg.png);background-position:center;background-size:contain;background-repeat:no-repeat;height:10vh}nav .navLinks{font-size:1.2em;text-transform:uppercase;text-decoration:none;color:blanchedalmond}nav .navLinks:hover{color:chocolate;padding:1em 1em}#slideshow{overflow:hidden;width:100%;margin:0 auto}#slideshow .slide-wrapper{width:4800px;animation:slide 8s ease infinite}#slideshow .slide-wrapper .slide{float:left;height:600px;width:1050px}@-webkit-keyframes slide{20%{margin-left:200px}30%{margin-left:-1000px}50%{margin-left:-1000px}60%{margin-left:-2000px}70%{margin-left:-2000px}80%{margin-left:-3000px}90%{margin-left:-3000px}}.historia-grid{display:grid;grid-template-columns:1fr 2fr 1fr;grid-auto-rows:auto;grid-gap:1em;align-items:center;text-align:center}.historia-grid .historia-columna{width:100%;padding:0.5rem}.historia-grid .historia-columna img{width:100%}.historia-grid .historia-columna img:hover{transform:scale(1.3)}.personajes-flex{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center}.personajes-flex .foto-circular-personaje{width:18rem;height:18rem;border-radius:50%;overflow:hidden;border-color:coral;border-style:solid;border-width:0.4rem;margin:auto;transition-duration:0.5s;transition-timing-function:linear;transition-delay:0s}.personajes-flex .foto-circular-personaje img{width:20rem}.personajes-flex .foto-circular-personaje:hover{transform:scale(1.03);border-width:0.7rem;border-color:#ffc400}.personajes-flex .column-personajes{width:300px;padding:7rem 0 2rem 0}.personajes-flex .column-personajes .linea-negra{border-style:solid;border-bottom:black;border-width:0.1rem;margin:1rem 0 1rem 0}.rebecca-grid{display:grid;grid-template-columns:1fr 4fr;grid-auto-rows:auto;grid-gap:1em;align-items:center;text-align:center;justify-content:center}.rebecca-grid img{width:350px;border-radius:50%;padding:5rem 0rem 2rem 0rem}.rebecca-grid .column-rebecca{width:100%;padding:2rem 5rem 0 4rem}.rebecca-grid .column-rebecca .imagen{padding-right:0}.formulario{padding-top:2rem}.formulario textarea{width:75%;height:250px;border-radius:0.8rem}.formulario input{width:75%;height:40px}footer{background-color:#000;font-size:5rem;text-align:center}footer a{text-decoration:none;color:coral}footer a:hover{color:chocolate}@media screen and (max-width: 900px){body h2{font-size:1.2rem;text-align:center}header{position:initial}header nav{grid-template-columns:100%;grid-template-rows:auto;grid-gap:1em;border-left:none;border-right:none}#slideshow{display:none}#historia .historia-grid{grid-template-columns:0fr 1fr 0fr}#historia .historia-grid img{visibility:hidden}#historia iframe{height:200px}.column-personajes{width:100%;margin-top:1rem;padding:2rem}.rebecca-grid{grid-template-columns:100%;grid-template-rows:auto;grid-gap:1em}.rebecca-grid img{width:300px;padding-top:1rem}.formulario{padding-left:4px;padding-right:4px}.formulario textarea{width:100%;height:100px}.formulario input{width:75%;height:30px}}
+/*GENERAL*/
+/* line 2, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+html {
+  font-size: 62.5%;
+  font-family: 'Krub', sans-serif;
+  background-image: url(../imagenes/repetido.png);
+}
+
+/* line 7, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+html * {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* line 12, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+html div {
+  display: block;
+}
+
+/* line 16, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+html body {
+  font-size: 1.5rem;
+  border-left: 0;
+  color: blanchedalmond;
+  /*control de fuentes*/
+}
+
+/* line 20, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+html body img {
+  width: 100%;
+}
+
+/* line 26, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+html body h2 {
+  /*titulo de cada seccion*/
+  background-image: linear-gradient(to left, coral, rgba(255, 255, 0, 0.61));
+  color: #f5eb8f;
+  text-align: right;
+  font-size: 5rem;
+  padding: 10px;
+  font-family: 'Itim', cursive;
+}
+
+/* line 33, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+html body h3 {
+  /*nombre de los personajes*/
+  color: coral;
+}
+
+/* line 36, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+html body h4 {
+  /*letras del formulario*/
+  font-size: 2rem;
+}
+
+/* line 40, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+html body header {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* line 47, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+html body main {
+  background-color: rgba(70, 60, 80, 0.418);
+}
+
+/* line 50, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+html body main .wrapper {
+  margin-top: 0;
+  padding-top: 60px;
+  padding-bottom: 0px;
+  width: 100%;
+}
+
+/* line 57, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+html body main .universe-main {
+  /*PARA CONTROLAR CADA SECCION*/
+  text-align: center;
+}
+
+/*MENU NAVEGADOR*/
+/* line 63, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+nav {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr 1fr 1fr 1.2fr 1fr;
+  grid-auto-rows: auto;
+  grid-gap: 1em;
+  align-items: center;
+  text-align: center;
+}
+
+/* line 71, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+nav .logo {
+  grid-column: 1;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Steven_Universe_logo.svg/1200px-Steven_Universe_logo.svg.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 10vh;
+}
+
+/* line 80, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+nav .navLinks {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: blanchedalmond;
+}
+
+/* line 87, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+nav .navLinks:hover {
+  color: chocolate;
+  padding: 1em 1em;
+}
+
+/*INICIO*/
+/* line 93, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+#slideshow {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 99, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+#slideshow .slide-wrapper {
+  width: 4800px;
+  animation: slide 8s ease infinite;
+}
+
+/* line 104, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+#slideshow .slide-wrapper .slide {
+  float: left;
+  height: 600px;
+  width: 1050px;
+}
+
+@-webkit-keyframes slide {
+  20% {
+    margin-left: 200px;
+  }
+  30% {
+    margin-left: -1000px;
+  }
+  50% {
+    margin-left: -1000px;
+  }
+  60% {
+    margin-left: -2000px;
+  }
+  70% {
+    margin-left: -2000px;
+  }
+  80% {
+    margin-left: -3000px;
+  }
+  90% {
+    margin-left: -3000px;
+  }
+}
+
+/*HISTORIA*/
+/* line 121, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+.historia-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-auto-rows: auto;
+  grid-gap: 1em;
+  align-items: center;
+  text-align: center;
+}
+
+/* line 130, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+.historia-grid .historia-columna {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+/* line 135, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+.historia-grid .historia-columna img {
+  width: 100%;
+}
+
+/* line 139, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+.historia-grid .historia-columna img:hover {
+  transform: scale(1.3);
+}
+
+/*PERSONAJES*/
+/* line 144, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+.personajes-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* line 150, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+.personajes-flex .foto-circular-personaje {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border-color: coral;
+  border-style: solid;
+  border-width: 0.4rem;
+  margin: auto;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+}
+
+/* line 163, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+.personajes-flex .foto-circular-personaje img {
+  width: 20rem;
+}
+
+/* line 169, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+.personajes-flex .foto-circular-personaje:hover {
+  transform: scale(1.03);
+  border-width: 0.7rem;
+  border-color: #ffc400;
+}
+
+/* line 175, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+.personajes-flex .column-personajes {
+  width: 300px;
+  padding: 7rem 0 2rem 0;
+}
+
+/* line 179, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+.personajes-flex .column-personajes .linea-negra {
+  border-style: solid;
+  border-bottom: black;
+  border-width: 0.1rem;
+  margin: 1rem 0 1rem 0;
+}
+
+/*REBECCA*/
+/* line 189, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+.rebecca-grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-auto-rows: auto;
+  grid-gap: 1em;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+/* line 199, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+.rebecca-grid img {
+  width: 350px;
+  border-radius: 50%;
+  padding: 5rem 0rem 2rem 0rem;
+}
+
+/* line 205, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+.rebecca-grid .column-rebecca {
+  width: 100%;
+  padding: 2rem 5rem 0 4rem;
+}
+
+/* line 209, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+.rebecca-grid .column-rebecca .imagen {
+  padding-right: 0;
+}
+
+/*CONTACTO*/
+/* line 214, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+.formulario {
+  padding-top: 2rem;
+}
+
+/* line 217, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+.formulario textarea {
+  width: 75%;
+  height: 250px;
+  border-radius: 0.8rem;
+}
+
+/* line 223, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+.formulario input {
+  width: 75%;
+  height: 40px;
+}
+
+/*FOOTER*/
+/* line 227, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+footer {
+  background-color: black;
+  font-size: 5rem;
+  text-align: center;
+}
+
+/* line 232, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+footer a {
+  text-decoration: none;
+  color: coral;
+}
+
+/* line 237, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+footer a:hover {
+  color: chocolate;
+}
+
+/*PARA CELULAR*/
+@media screen and (max-width: 900px) {
+  /*general*/
+  /*menu*/
+  /* line 250, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+  html body h2 {
+    /*cambiar los titulos de cada seccion*/
+    font-size: 3rem;
+    text-align: center;
+  }
+  /* line 255, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+  html body header {
+    position: relative;
+  }
+  /* line 258, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+  html body header nav {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+    border-left: none;
+    border-right: none;
+  }
+  /*home*/
+  /* line 270, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+  #slideshow {
+    display: none;
+  }
+  /*historia*/
+  /* line 277, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+  #historia .historia-grid {
+    grid-template-columns: 0fr 1fr 0fr;
+  }
+  /* line 280, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+  #historia .historia-grid img {
+    visibility: hidden;
+  }
+  /* line 285, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+  #historia iframe {
+    height: 200px;
+  }
+  /*personajes*/
+  /* line 292, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+  .personajes-flex .column-personajes {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 2rem;
+  }
+  /*rebecca*/
+  /* line 299, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+  .rebecca-grid {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+  }
+  /* line 304, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+  .rebecca-grid img {
+    width: 300px;
+    padding-top: 1rem;
+  }
+  /*contacto*/
+  /* line 312, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+  .formulario {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  /* line 316, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+  .formulario textarea {
+    width: 100%;
+    height: 100px;
+  }
+  /* line 321, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+  .formulario input {
+    width: 75%;
+    height: 30px;
+  }
+}
+
+/*# sourceMappingURL=../css/pagina.map */
