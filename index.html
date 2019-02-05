@@ -16,25 +16,44 @@
 
 <!--NAVEGADOR-->
 <header>
-    <nav class="contenedor">
-        <div class="logo"></div>
-        <div class="1">
-            <a href="#arriba" class="navLinks">  <i class="fas fa-igloo"></i>  Home</a>
-        </div>
-        <div class="2">
-            <a href="#historia" class="navLinks"><i class="fas fa-book-reader"></i>  Historia</a>
-        </div>
-        <div class="3">
-            <a href="#personajes" class="navLinks"><i class="fas fa-gem"></i>  Personajes</a>
-        </div>
-        <div class="4">
-            <a href="#rebecca" class="navLinks"><i class="fas fa-address-card"> </i>  Rebecca Sugar</a>
-        </div>
-        <div class="5">
-            <a href="#contacto" class="navLinks"><i class="far fa-envelope"></i>  Contacto</a>
-        </div>
+   <nav>
+        <ul class="topnav" id="myTopnav">
+    
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Steven_Universe_logo.svg/1280px-Steven_Universe_logo.svg.png" alt="logo">
+                </li>
+                <li>
+                    <a href="#arriba" class="navLinks">  <i class="fas fa-igloo"></i>  Home</a>
+                </li>
+                <li>
+                        <a href="#historia" class="navLinks"><i class="fas fa-book-reader"></i>  Historia</a>
+                </li>
+                <li>
+                        <a href="#personajes" class="navLinks"><i class="fas fa-gem"></i>  Personajes</a>
+                </li>
+                <li>
+                        <a href="#rebecca" class="navLinks"><i class="fas fa-address-card"> </i>  Rebecca Sugar</a>
+                </li>
+                <li>
+                        <a href="#contacto" class="navLinks"><i class="far fa-envelope"></i>  Contacto</a>
+                </li>
+                <li class="icon" >
+                    <a href="javascript:void(0);" onClick='myFunction()' >
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+            
+            <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
     </nav>
-
 </header>
 
 <!--CONTENIDO-->
@@ -43,6 +62,9 @@
 <!--INCIO-->
 <section class="universe-main wrapper " id="arriba">
 
+    <div class="responsive">
+    <img width="100%" src="http://az616578.vo.msecnd.net/files/2016/08/12/63606609530010159278801000_Steven_Universe-all_characters.jpg" alt="inicio-respo">
+    </div>
 <div id="slideshow">
     <div class="slide-wrapper">
         <div class="slide"> 
