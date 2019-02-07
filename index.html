@@ -14,46 +14,45 @@
 
 <body>
 
+<div class="contenedor">
+
 <!--NAVEGADOR-->
 <header>
-   <nav>
-        <ul class="topnav" id="myTopnav">
-    
-                <li>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Steven_Universe_logo.svg/1280px-Steven_Universe_logo.svg.png" alt="logo">
-                </li>
-                <li>
-                    <a href="#arriba" class="navLinks">  <i class="fas fa-igloo"></i>  Home</a>
-                </li>
-                <li>
-                        <a href="#historia" class="navLinks"><i class="fas fa-book-reader"></i>  Historia</a>
-                </li>
-                <li>
-                        <a href="#personajes" class="navLinks"><i class="fas fa-gem"></i>  Personajes</a>
-                </li>
-                <li>
-                        <a href="#rebecca" class="navLinks"><i class="fas fa-address-card"> </i>  Rebecca Sugar</a>
-                </li>
-                <li>
-                        <a href="#contacto" class="navLinks"><i class="far fa-envelope"></i>  Contacto</a>
-                </li>
+   
+<div class="navegador-grid">
+
+        <div class="navegador-columna" >
+
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Steven_Universe_logo.svg/1280px-Steven_Universe_logo.svg.png" alt="logo">
+
+        </div>
+
+        <div class="navegador-columna">
+                <nav>
+        
+                <ul class="topnav" id="myTopnav">
+                        <li><a href="#arriba" class="navLinks">  <i class="fas fa-igloo"></i>  Home</a></li>
+                        <li><a href="#historia" class="navLinks"><i class="fas fa-book-reader"></i>  Historia</a></li>
+                        <li><a href="#personajes" class="navLinks"><i class="fas fa-gem"></i>  Personajes</a></li>
+                        <li><a href="#rebecca" class="navLinks"><i class="fas fa-address-card"> </i>  Rebecca Sugar</a></li>
+                        <li><a href="#contacto" class="navLinks"><i class="far fa-envelope"></i>  Contacto</a></li>
                 <li class="icon" >
-                    <a href="javascript:void(0);" onClick='myFunction()' >
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </li>
-            
-            <script>
-            function myFunction() {
-              var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
-                x.className += " responsive";
-              } else {
-                x.className = "topnav";
-              }
-            }
-            </script>
-    </nav>
+                         <a href="javascript:void(0);" onClick='myFunction()' >
+                        <i class="fa fa-bars"></i></a></li>
+                </nav>
+        </div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</div>
 </header>
 
 <!--CONTENIDO-->
@@ -111,37 +110,37 @@
 
  <section class="universe-main wrapper " id="personajes">
         <h2>Personajes</h2>
-        <div class="personajes-flex">
+        <div class="personajes-grid">
             <div class="column-personajes">
-                <div class="foto-circular-personaje">
+                
                     <img src="imagenes/steven.png" alt="Steven">       
-                </div>
+                
                 <h3>Steven</h3>
                 <div class="linea-negra"></div>
                      <p>
                         Steven es el bicho raro y torpe del equipo. Puede no ser tan poderoso o inteligente como las otras gemas, 
                         <br> ¡pero siempre encuentra una manera sorprendente de salvar el día!
                     </p>
-        </div>
+            </div>
         
-        <div class="personajes-flex">
+        
              <div class="column-personajes">
-                <div class="foto-circular-personaje">
+                
                     <img src="imagenes/perla.png" alt="Perla">
-                </div>
+                
                     <h3>Perla</h3>
                 <div class="linea-negra"></div>
                     <p>
                         Perla es una perfeccionista total que se frusta fácilmente cuando algo arruina sus planes. 
                        <br> Ese algo es usualmente Steven. Su arma es una lanza mágica.
                     </p>                      
-        </div>
+            </div>
         
-        <div class="personajes-flex">
+        
             <div class="column-personajes">
-                <div class="foto-circular-personaje">
+                
                     <img src="imagenes/amatista.png" alt="Amatista">
-                </div>
+                
                     <h3>Amatista</h3>
                  <div class="linea-negra"></div>
                     <p>
@@ -149,19 +148,20 @@
                         Ella adora perder el tiempo con Steven  e intercambiar bromas. 
                         <br> Su arma es un látigo de cristal el cual conjura a través de la gema que tiene en su pecho.
                     </p>
-        </div>
+            </div>
         
-        <div class="personajes-flex">
+
              <div class="column-personajes">
-                <div class="foto-circular-personaje">
+                
                     <img src="imagenes/garnet.png" alt="Garnet">
-                </div>
+                
                     <h3>Garnet</h3>
                 <div class="linea-negra"></div>
                     <p>
                         Es una fuerte y disciplinada guerrera y la líder no oficial del grupo. 
                       <br>  Es una gema de pocas palabras y prefiere hablar con sus poderosos puños.
                     </p>
+            </div>
         </div>
     
 </section>
@@ -214,12 +214,16 @@
 
 </main>
 
+
+
 <!--PIE DE PAGINA CON LAS REDES SOCIALES-->
  <footer>
     <a href="https://www.instagram.com/rebeccasugar/" target="_blank" ><i class="fab fa-instagram"></i> </a>
     <a href="https://twitter.com/rebeccasugar?lang=es" target="_blank" ><i class="fab fa-twitter"></i> </a>
     <a href="https://www.facebook.com/StevenUniverse/" target="_blank" ><i class="fab fa-facebook-square"></i> </a>
  </footer>
+
+</div>
 
 </body>
 </html>
