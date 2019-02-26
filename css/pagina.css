@@ -445,13 +445,24 @@ footer a:hover {
     position: relative;
     flex-direction: column;
   }
-  /* line 368, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+  /* line 369, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+  .topnav.responsive .navegador-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 1em;
+    align-items: top left;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+  }
+  /* line 382, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  /* line 373, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
+  /* line 387, C:/Users/jumbo/Desktop/Steven/Desafio-9/scss/pagina.scss */
   .topnav.responsive li {
     display: block;
     text-align: left;
