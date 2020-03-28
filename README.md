@@ -1,8 +1,10 @@
-# StevenUniverse
-Steven Universe One Page Responsive
+# StevenUniverse 🚀
+_Steven Universe One Page Responsive_
 
-HTML 5
-CSS 3 / SASS 
-Grid
+## Construido con 🛠️
+
+*HTML 5
+*CSS 3 / SASS
+*Grid
 
 
