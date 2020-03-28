@@ -1,4 +1,4 @@
-# StevenUniverse 🚀
+# StevenUniverse :gem:
 _Steven Universe One Page Responsive_
 
 * [Preview](https://rocionatalia.github.io/StevenUniverse-HTML/)
